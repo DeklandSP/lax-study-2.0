@@ -6,24 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/076ac73a0f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Lobster&display=swap"
+        rel="stylesheet">
     <title>Lax Study Home</title>
 </head>
 
 <body>
 
-    <audio id="rain" autoplay loop volume=>
+    <audio id="rain" loop>
         <source src="RainSound.wav" type="audio/wav">
+
     </audio>
-    <script> var sound = document.getElementById("rain");
-        sound.volume = 0.2;
+    <script>
+        const sound = document.getElementById("rain");
+        function play() {
+            sound.volume = 0.2;
+            sound.paused ? sound.play() : sound.pause();
+        }
     </script>
+
     <div class="mainNavBar">
         <a class="onThisPage, mainNavBarList" href="landingPage.html">Home</a>
         <a class="mainNavBarList" href="Meditations/boxbreathing.html">Meditations</a>
-        <a class="mainNavBarList" href="">About Us</a>
-        <a class="mainNavBarList" href="">Contact</a>
-        <a class="mainNavBarProfile" href="Profile/profile.html"> My Profile</a>
+        <a class="mainNavBarList" href="">Studying</a>
+        <a class="mainNavBarList" href="">Diet</a>
+        <a class="mainNavBarList" href="">Relaxation</a>
+        <a class="mainNavBarList" onclick="play()"><i class=" fa-regular fa-circle-play"></i> Play</a>
+        <a class="mainNavBarProfile" href="Profile/profile.html"><i class="fa-solid fa-circle-user"></i> My Profile</a>
     </div>
     <div class="meditationBackgroundImage">
         <div class="meditationImageText">
@@ -36,11 +48,54 @@
                 during study
                 sessions
                 or when every they feel the need to.
-                Laxt study provides a variety of different meditation techniques as well as study tips.
+                Lax Study provides a variety of different meditation techniques as well as study tips.
             </p>
         </div>
 
     </div>
+    <div>
+        <div class="informationContainer">
+            <h1 class="heading">Tips and Tricks</h1>
+            <h4 class="informationItemMeditation">Meditation</h4>
+            <img class="informationItemMeditationImage" src="Images/blossom-g3d32fcb48_640.jpg" alt="blossom tree">
+            <p class="informationItemMeditationText">This is just placeholder text</p>
+
+            <h4 class="informationItemStudying">Techniques for Studying</h4>
+            <img class="informationItemStudyingImage" src="Images/laptop-g756142c8b_640.jpg" alt="blossom tree">
+            <p class="informationItemStudyingText">This is just placeholder text</p>
+
+            <h4 class="informationItemDiet">Diet & Nutrition</h4>
+            <img class="informationItemDietImage" src="Images/salad-gf904d2676_640.jpg" alt="blossom tree">
+            <p class="informationItemDietText">This is just placeholder text</p>
+
+            <h4 class="informationItemRelaxation">Relaxation <br />Techniques</h4>
+            <img class="informationItemRelaxationImage" src="Images/coffee-gd562ac859_640.jpg" alt="blossom tree">
+            <p class="informationItemRelaxationText">This is just placeholder text</p>
+
+
+        </div>
+    </div>
+    <div>
+        <div class="secondaryParagraphContainer">
+
+            <h1 class="secondaryParagraphItem1">Why lax Study?</h1>
+
+
+            <p class="secondaryParagraphItem2">Lax study is designed by students and for students. We try our best here
+                to provide accurate and essential
+                information that will be vital for students, be it from how to study and pass exams, or simply the best
+                foods to eat to improve your mood and motivation.
+            </p>
+        </div>
+    </div>
+    <div>
+        <footer class="footerInfo">Created by
+            <a href="">Declan,</a>
+            <a href="">Chris </a>and
+            <a href="">Lewis</a>
+        </footer>
+    </div>
+
 </body>
 
 </html>
