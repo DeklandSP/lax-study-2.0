@@ -1,6 +1,7 @@
 # lax-study-2.0
 Lax-study is a website designed with meditation in mind and to help students with their studies.
 
+# Image of site:
 ![Image of website Currently](https://cdn.discordapp.com/attachments/908663297874722819/951537192398897163/unknown.png)
 
 # 2nd March 2022-Christopher Szafranek
